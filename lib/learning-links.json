@@ -1,0 +1,23 @@
+[
+  {
+    "id": "link_antibio",
+    "triggers": ["antibiotique", "probiotique"],
+    "title": "Module: Accompagnement Antibiothérapie",
+    "description": "Apprenez à conseiller les probiotiques avec les antibiotiques.",
+    "url": "#learning/antibiotherapie"
+  },
+  {
+    "id": "link_ains",
+    "triggers": ["anti-inflammatoire", "estomac", "ains"],
+    "title": "Module: AINS et protection gastrique",
+    "description": "Comprendre quand recommander un pansement gastrique.",
+    "url": "#learning/ains"
+  },
+  {
+    "id": "link_statine",
+    "triggers": ["statine", "coenzyme", "douleurs musculaires"],
+    "title": "Module: Statines et confort musculaire",
+    "description": "Le rôle du Coenzyme Q10 lors de traitements par statines.",
+    "url": "#learning/statines"
+  }
+]

@@ -14,7 +14,8 @@ import {
   extractFromImage, validateImageFile,
   ACCEPTED_FORMATS, MAX_SIZE_LABEL,
 } from "../lib/ocr-adapter.mjs";
-import medicaments from "../lib/medicaments.json";
+import products from "../lib/products.json";
+const medicaments = products.filter(p => !p.fictional);
 
 // ─── Constants ─────────────────────────────────────────────────────────────────
 const STEPS = ["entry", "questions", "result", "summary"];
@@ -304,6 +305,22 @@ function NeedForm({ session, dispatch }) {
       <InfoNote icon={ShieldCheck}>
         Ne notez pas d'information médicale sensible ici. En cas de question sur un traitement, orientez directement vers le pharmacien.
       </InfoNote>
+      <div style={{ marginTop: '1rem', borderTop: '1px solid var(--gray-200)', paddingTop: '1rem' }}>
+        <button
+          className="button secondary"
+          onClick={() => {
+            dispatch({ type: "RESET_SESSION" });
+            dispatch({ type: "SET_NEED", value: "voyage" });
+            dispatch({
+              type: "ADD_ENTRY",
+              entry: { id: crypto.randomUUID(), name: "DEMOMED A", strength: "10 mg", form: "Comprimé", isMedication: true, unknown: false },
+            });
+            setText("voyage");
+          }}
+        >
+          <Package size={14} /> Charger le scénario fictif démo (Pochette / Voyage)
+        </button>
+      </div>
     </div>
   );
 }
@@ -316,6 +333,7 @@ function ImageImport({ session, dispatch }) {
   const [statusMsg, setStatusMsg] = useState("");
   const [error, setError] = useState(null);
   const fileRef = useRef();
+  const abortControllerRef = useRef(null);
   const previewUrl = session.imagePreviewUrl;
 
   function handleFile(file) {
@@ -330,6 +348,10 @@ function ImageImport({ session, dispatch }) {
   }
 
   async function runOcr(file) {
+    if (abortControllerRef.current) abortControllerRef.current.abort();
+    const abortController = new AbortController();
+    abortControllerRef.current = abortController;
+
     setProcessing(true);
     setProgress(0);
     setStatusMsg("Chargement de Tesseract.js…");
@@ -339,17 +361,22 @@ function ImageImport({ session, dispatch }) {
         if (p < 0.08) setStatusMsg("Chargement du moteur OCR…");
         else if (p < 0.12) setStatusMsg("Chargement des langues (français + arabe)…");
         else setStatusMsg(`Analyse en cours… ${Math.round(p * 100)}%`);
-      });
+      }, abortController.signal);
       dispatch({ type: "SET_OCR_RESULT", result });
-    } catch {
-      setError("Une erreur inattendue s'est produite. Utilisez la saisie manuelle.");
+    } catch (err) {
+      if (err.name !== 'AbortError' && err.message !== 'Canceled') {
+        setError("Une erreur inattendue s'est produite. Utilisez la saisie manuelle.");
+      }
     } finally {
-      setProcessing(false);
-      setStatusMsg("");
+      if (abortControllerRef.current === abortController) {
+        setProcessing(false);
+        setStatusMsg("");
+      }
     }
   }
 
   function removeImage() {
+    if (abortControllerRef.current) abortControllerRef.current.abort();
     if (previewUrl) URL.revokeObjectURL(previewUrl);
     dispatch({ type: "CLEAR_IMAGE" });
     setError(null); setProcessing(false); setProgress(0); setStatusMsg("");
@@ -462,23 +489,24 @@ function OcrConfirm({ result, dispatch }) {
             <div key={field.id} className={`cp-ocr-field ${field.uncertain ? "is-uncertain" : ""}`}>
               <label className="cp-ocr-label">
                 {field.label}
-                {field.uncertain && <span className="cp-uncertain-badge">À vérifier</span>}
+                {field.uncertain && <span className="cp-uncertain-badge">Lecture incertaine</span>}
                 {field.isDemo && <span className="cp-demo-field-badge">FICTIF</span>}
               </label>
               <input
                 className="cp-input"
                 value={field.value}
                 onChange={e => updateField(field.id, e.target.value)}
-                aria-label={`${field.label} — à corriger si nécessaire`}
+                aria-label={`Nom détecté — ${field.label}`}
+                placeholder="Nom détecté"
               />
             </div>
           ))}
           {confirmed ? (
             <div className="cp-ocr-confirmed">
-              <Check size={15} /> Champs confirmés. Poursuivez avec les questions.
+              <Check size={15} /> Champs confirmés. Correspondance à vérifier.
             </div>
           ) : (
-            <Btn onClick={confirm}><Check size={16} /> Confirmer les informations</Btn>
+            <Btn onClick={confirm}><Check size={16} /> Confirmer la transcription</Btn>
           )}
         </>
       )}
@@ -515,7 +543,18 @@ function EntryStep({ session, dispatch }) {
           exit={{ opacity: 0, y: -4 }} transition={{ duration: 0.14 }}>
           {mode === "need"     && <NeedForm     session={session} dispatch={dispatch} />}
           {mode === "products" && <ProductsForm session={session} dispatch={dispatch} />}
-          {mode === "image"    && <ImageImport  session={session} dispatch={dispatch} />}
+          {mode === "image" && (
+            <div className="cp-desktop-split">
+              <div className="cp-desktop-split-left">
+                <ImageImport session={session} dispatch={dispatch} />
+              </div>
+              {session.entries?.length > 0 && (
+                <div className="cp-desktop-split-right">
+                  <ProductsForm session={session} dispatch={dispatch} />
+                </div>
+              )}
+            </div>
+          )}
         </motion.div>
       </AnimatePresence>
     </div>
@@ -678,9 +717,9 @@ function QuestionsStep({ session, dispatch }) {
 // ─── Result step ───────────────────────────────────────────────────────────────
 function ActionIcon({ action }) {
   const icons = {
-    question: <HelpCircle size={22} />,
+    more_info: <HelpCircle size={22} />,
     option: <Package size={22} />,
-    pharmacist: <ShieldAlert size={22} />,
+    pharmacist_review: <ShieldAlert size={22} />,
     no_action: <CheckCircle2 size={22} />,
   };
   return <span className={`cp-action-icon cp-action-icon--${action}`}>{icons[action]}</span>;
@@ -688,10 +727,10 @@ function ActionIcon({ action }) {
 
 function actionLabel(action) {
   return {
-    question: "Poser une question supplémentaire",
-    option: "Expliquer une option complémentaire",
-    pharmacist: "Orienter vers le pharmacien",
-    no_action: "Aucun produit complémentaire indiqué",
+    more_info: "Information supplémentaire requise",
+    option: "Option complémentaire du catalogue",
+    pharmacist_review: "Avis du pharmacien requis",
+    no_action: "Aucun produit supplémentaire requis",
   }[action] || "Action inconnue";
 }
 
@@ -799,7 +838,7 @@ function ResultStep({ session, dispatch, onGoLesson }) {
           </div>
         )}
 
-        {action === "pharmacist" && (
+        {action === "pharmacist_review" && (
           <div className="cp-pharmacist-note">
             <Phone size={15} />
             <span>Résumez brièvement la situation au pharmacien pour faciliter la transmission.</span>
@@ -817,40 +856,84 @@ function ResultStep({ session, dispatch, onGoLesson }) {
 }
 
 // ─── Feature 4: Upsell in Summary ─────────────────────────────────────────────
-function UpsellCard({ item }) {
+function UpsellCard({ item, role }) {
+  const isPharmacistReview = item.ruleOutcome === "pharmacist_review";
   return (
     <motion.div
-      className="cp-upsell-card"
+      className={`cp-upsell-card ${isPharmacistReview ? "is-pharmacist-review" : ""}`}
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: "spring", stiffness: 180, damping: 20 }}
     >
       <div className="cp-upsell-header">
-        <TrendingUp size={16} />
+        {isPharmacistReview ? <ShieldAlert size={16} /> : <TrendingUp size={16} />}
         <strong>{item.name}</strong>
         <span className="cp-catalogue-category">{item.category}</span>
+        {item.fictional && <span className="cp-demo-field-badge" style={{marginLeft: 'auto'}}>FICTIF</span>}
       </div>
-      <blockquote className="cp-upsell-wording">« {item.suggestedWording} »</blockquote>
-      {item.notFor?.length > 0 && (
-        <p className="cp-upsell-not">
-          <AlertCircle size={12} /> Non indiqué si : {item.notFor.join(", ")}
-        </p>
+
+      <div className="cp-upsell-status">
+        {isPharmacistReview ? (
+          <span className="cp-uncertain-badge">Évaluation pharmaceutique nécessaire</span>
+        ) : (
+          <span className="cp-status-badge">Option à examiner</span>
+        )}
+      </div>
+
+      <div className="cp-upsell-why">
+        <p className="cp-wording-label">Pourquoi cette option ?</p>
+        <p style={{fontSize: '0.85rem', marginTop: 4}}>{item.why}</p>
+      </div>
+
+      {item.toVerify && (
+        <div className="cp-upsell-not">
+          <AlertTriangle size={12} />
+          <span><strong>À vérifier :</strong> {item.toVerify}</span>
+        </div>
       )}
-      <p className="cp-upsell-source"><ShieldCheck size={11} /> {item.reviewStatus}</p>
+
+      <div className="cp-upsell-actions" style={{display: 'flex', gap: '6px', marginTop: '12px', flexWrap: 'wrap'}}>
+        {isPharmacistReview ? (
+          <>
+            <button className="button secondary"><FileText size={13} /> Voir les points à examiner</button>
+            {role === "assistant" && (
+              <button className="button secondary"><Phone size={13} /> Préparer le résumé pour le pharmacien</button>
+            )}
+          </>
+        ) : (
+          <>
+            <button className="button secondary"><MessageSquare size={13} /> À discuter avec le client</button>
+            <button className="button secondary"><Check size={13} /> Déjà équipé</button>
+            <button className="button secondary"><X size={13} /> Non intéressé</button>
+          </>
+        )}
+      </div>
     </motion.div>
   );
 }
 
 function SummaryStep({ session, dispatch }) {
   const result = session.result;
+  const [role, setRole] = useState("assistant");
+  
   const hasUpsell = result && !result.stale && result.catalogueItems?.length > 0;
-  const isPharmacist = result?.action === "pharmacist";
+  const isNoAction = result && !result.stale && result.action === "no_action";
+  const isMoreInfo = result && !result.stale && result.action === "more_info";
 
   return (
     <div className="cp-summary">
-      <div className="cp-summary-header">
-        <CheckCircle2 size={36} />
-        <h3>Récapitulatif de l'échange</h3>
+      <div className="cp-summary-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          <CheckCircle2 size={36} />
+          <h3>Récapitulatif de l'échange</h3>
+        </div>
+        <div className="cp-role-toggle" style={{display: 'flex', alignItems: 'center', gap: '8px', background: 'var(--gray-50)', padding: '6px 10px', borderRadius: '6px', border: '1px solid var(--gray-200)'}}>
+          <span style={{fontSize: '0.75rem', color: 'var(--gray-500)', fontWeight: 600}}>Mode Démo</span>
+          <select value={role} onChange={e => setRole(e.target.value)} className="cp-input cp-input--small" style={{width: 'auto', border: 'none', background: 'transparent', padding: '0 4px', fontWeight: 500}}>
+            <option value="assistant">Vue Assistant</option>
+            <option value="pharmacist">Vue Pharmacien</option>
+          </select>
+        </div>
       </div>
 
       <div className="cp-summary-block">
@@ -860,7 +943,7 @@ function SummaryStep({ session, dispatch }) {
 
       {session.entries?.length > 0 && (
         <div className="cp-summary-block">
-          <SectionLabel>Produits mentionnés</SectionLabel>
+          <SectionLabel>Produits confirmés</SectionLabel>
           <ul className="cp-summary-products">
             {session.entries.map(e => (
               <li key={e.id} className={e.isMedication ? "is-rx" : ""}>
@@ -889,41 +972,54 @@ function SummaryStep({ session, dispatch }) {
         </div>
       )}
 
-      {result && !result.stale && (
-        <div className="cp-summary-block">
-          <SectionLabel>Action recommandée</SectionLabel>
-          <p><strong>{actionLabel(result.action)}</strong></p>
-          <p className="cp-summary-wording">« {result.suggestedWording} »</p>
-        </div>
-      )}
-
       {/* ── Feature 4: Upsell propositions ── */}
       {hasUpsell && (
-        <div className="cp-upsell-section">
+        <div className="cp-upsell-section" style={{ marginTop: '2rem' }}>
           <div className="cp-upsell-title">
             <TrendingUp size={18} />
             <div>
-              <h4>Produits à proposer</h4>
-              <p>Ces produits correspondent au besoin exprimé et peuvent être présentés au client.</p>
+              <h4>Options complémentaires à examiner</h4>
+              <p>Selon les produits confirmés et le besoin exprimé.</p>
             </div>
           </div>
-          {result.catalogueItems.map(item => <UpsellCard key={item.id} item={item} />)}
+          <div style={{display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1rem'}}>
+            {result.catalogueItems.map(item => <UpsellCard key={item.id} item={item} role={role} />)}
+          </div>
         </div>
       )}
-
-      {isPharmacist && (
-        <div className="cp-summary-block">
-          <InfoNote icon={ShieldAlert} tone="caution">
-            Ce dossier doit être transmis au pharmacien. Résumez brièvement la situation avant de le passer.
+      
+      {!hasUpsell && isMoreInfo && (
+        <div className="cp-summary-block" style={{ marginTop: '2rem' }}>
+          <InfoNote icon={HelpCircle} tone="caution">
+            <strong>Information complémentaire nécessaire :</strong> {result.suggestedWording}
           </InfoNote>
         </div>
       )}
 
-      {!hasUpsell && !isPharmacist && result && result.action === "no_action" && (
-        <div className="cp-summary-block">
+      {!hasUpsell && isNoAction && (
+        <div className="cp-summary-block" style={{ marginTop: '2rem' }}>
           <InfoNote icon={CheckCircle2} tone="success">
-            Aucun produit complémentaire indiqué dans cette situation. L'échange est complet.
+            Aucun achat complémentaire nécessaire selon les informations recueillies. L'échange est complet.
           </InfoNote>
+        </div>
+      )}
+
+      {result?.action === "pharmacist_review" && !hasUpsell && (
+        <div className="cp-summary-block" style={{ marginTop: '2rem' }}>
+          <InfoNote icon={ShieldAlert} tone="caution">
+            <strong>Évaluation pharmaceutique nécessaire :</strong> {result.reason}
+          </InfoNote>
+        </div>
+      )}
+
+      {/* Role-based overall instruction (for cases with pharmacist actions) */}
+      {result?.action === "pharmacist_review" && (
+        <div className="cp-summary-block" style={{ marginTop: '1.5rem', background: 'var(--yellow-50)', padding: '1rem', borderRadius: '8px', border: '1px solid var(--yellow-200)' }}>
+          {role === "pharmacist" ? (
+            <p style={{color: 'var(--yellow-800)', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '8px'}}><ShieldAlert size={16} /> Points à examiner avant toute proposition : {result.reason}</p>
+          ) : (
+            <p style={{color: 'var(--yellow-800)', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '8px'}}><Phone size={16} /> À faire examiner par le pharmacien. Résumez brièvement les produits confirmés et l'incertitude.</p>
+          )}
         </div>
       )}
 
@@ -938,6 +1034,15 @@ function SummaryStep({ session, dispatch }) {
         </Btn>
         <p className="cp-reload-note">Un rechargement de page effacera également le brouillon en cours.</p>
       </div>
+
+      {process.env.NODE_ENV !== "production" && result?.ruleTrace && (
+        <div style={{ marginTop: '2rem', background: '#f8fafc', border: '1px solid #cbd5e1', padding: '1rem', borderRadius: '8px', fontSize: '11px', fontFamily: 'monospace' }}>
+          <strong>DEBUG Rule Trace:</strong>
+          <pre style={{ whiteSpace: 'pre-wrap' }}>
+            {JSON.stringify(result.ruleTrace, null, 2)}
+          </pre>
+        </div>
+      )}
     </div>
   );
 }
