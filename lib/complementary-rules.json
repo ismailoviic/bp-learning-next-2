@@ -1,0 +1,98 @@
+[
+  {
+    "id": "rule_antibiotique_flore",
+    "triggers": ["antibiotique", "amoxicilline", "augmentin", "azithromycine", "clamoxyl", "orelox", "zithromax", "flore intestinale", "diarrhée"],
+    "blockingConditions": ["immunodépression sévère"],
+    "outcome": "pharmacist_review",
+    "suggestedProducts": ["probiotiques_flore"],
+    "explanationTemplate": "Le traitement antibiotique prescrit peut déséquilibrer votre flore intestinale et causer des inconforts. Je vous conseille de l'associer à ces probiotiques pour la protéger."
+  },
+  {
+    "id": "rule_ains_estomac",
+    "triggers": ["ibuprofène", "anti-inflammatoire", "aspirine", "diclofénac", "naproxène", "profénid", "voltarene", "ains", "brûlure d'estomac"],
+    "blockingConditions": ["insuffisance rénale sévère", "prise avec d'autres médicaments sans espacement de 2h"],
+    "outcome": "pharmacist_review",
+    "suggestedProducts": ["pansement_gastrique"],
+    "explanationTemplate": "Cet anti-inflammatoire peut parfois irriter l'estomac. Si vous êtes sensible, je peux vous proposer un pansement gastrique pour protéger votre estomac pendant le traitement."
+  },
+  {
+    "id": "rule_statine_musculaire",
+    "triggers": ["statine", "atorvastatine", "rosuvastatine", "simvastatine", "tahor", "crestor", "zocor", "douleurs musculaires"],
+    "blockingConditions": ["traitement anticoagulant (interaction possible) sans avis médical"],
+    "outcome": "pharmacist_review",
+    "suggestedProducts": ["coenzyme_q10"],
+    "explanationTemplate": "Ce traitement pour le cholestérol peut parfois diminuer votre taux de Coenzyme Q10, ce qui cause des sensibilités musculaires. Une supplémentation peut vous aider à maintenir un bon confort musculaire."
+  },
+  {
+    "id": "rule_baume_levres",
+    "triggers": ["lèvres sèches", "froid", "dessèchement"],
+    "blockingConditions": ["plaie ouverte", "infection"],
+    "outcome": "option",
+    "suggestedProducts": ["baume_levres_froid"],
+    "explanationTemplate": "On a un baume lèvres sans parfum, adapté au froid — simple et pratique."
+  },
+  {
+    "id": "rule_creme_mains",
+    "triggers": ["mains sèches", "froid", "dessèchement", "peau tiraillée"],
+    "blockingConditions": ["plaie ouverte", "eczéma suintant"],
+    "outcome": "option",
+    "suggestedProducts": ["creme_mains_hiver"],
+    "explanationTemplate": "Pour les mains sèches par le froid, on a une crème mains nourrissante — elle s'absorbe vite."
+  },
+  {
+    "id": "rule_spray_eau_mer",
+    "triggers": ["nez bouché", "nez sec", "congestion légère", "rhinite légère"],
+    "blockingConditions": ["prescription médicale requise", "polypes nasaux connus"],
+    "outcome": "option",
+    "suggestedProducts": ["spray_eau_mer"],
+    "explanationTemplate": "Pour un nez bouché léger, on a un spray eau de mer — sans médicament, doux pour un usage quotidien."
+  },
+  {
+    "id": "rule_pastilles_gorge",
+    "triggers": ["irritation de gorge légère", "gorge sèche", "voix enrouée légère"],
+    "blockingConditions": ["enfants de moins de 6 ans", "angine bactérienne diagnostiquée"],
+    "outcome": "option",
+    "suggestedProducts": ["pastilles_gorge_menthol"],
+    "explanationTemplate": "Pour une irritation légère, des pastilles gorge au menthol peuvent aider à apaiser."
+  },
+  {
+    "id": "rule_magnesium",
+    "triggers": ["fatigue passagère", "manque d'énergie", "coup de mou", "stress léger"],
+    "blockingConditions": ["maladie chronique non diagnostiquée", "traitement en cours sans avis pharmacien"],
+    "outcome": "option",
+    "suggestedProducts": ["magnesium_complement"],
+    "explanationTemplate": "Un complément en magnésium peut correspondre à ce que vous décrivez — la durée recommandée est d'un mois."
+  },
+  {
+    "id": "rule_gel_hydro",
+    "triggers": ["hygiène des mains", "déplacement", "usage professionnel"],
+    "blockingConditions": ["peau lésée"],
+    "outcome": "option",
+    "suggestedProducts": ["gel_hydro_mains"],
+    "explanationTemplate": "Pour l'hygiène en déplacement, on a un gel mains de 500 ml rechargeable."
+  },
+  {
+    "id": "rule_creme_solaire",
+    "triggers": ["protection solaire", "exposition soleil", "peau sensible", "teint à protéger"],
+    "blockingConditions": ["allergie connue aux filtres solaires"],
+    "outcome": "option",
+    "suggestedProducts": ["creme_solaire_50"],
+    "explanationTemplate": "Pour une protection solaire quotidienne, on a une crème SPF 50+ légère, adaptée au visage."
+  },
+  {
+    "id": "rule_collyre_hydratant",
+    "triggers": ["yeux secs", "irritation légère des yeux", "écrans prolongés", "air climatisé"],
+    "blockingConditions": ["infection oculaire", "traumatisme oculaire", "rougeur persistante"],
+    "outcome": "option",
+    "suggestedProducts": ["collyre_hydratant"],
+    "explanationTemplate": "Pour des yeux secs ou fatigués par les écrans, on a des gouttes hydratantes sans conservateur."
+  },
+  {
+    "id": "rule_demo_pouch",
+    "triggers": ["voyage", "transport", "rangement", "pochette"],
+    "blockingConditions": ["Le client est déjà équipé", "Non adapté aux produits devant rester au frais"],
+    "outcome": "option",
+    "suggestedProducts": ["demo_pochette"],
+    "explanationTemplate": "Puisque vous voyagez, une pochette de rangement classique peut être pratique pour rassembler vos boîtes en toute sécurité."
+  }
+]

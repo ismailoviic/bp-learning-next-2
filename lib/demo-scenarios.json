@@ -1,0 +1,13 @@
+{
+  "fixtures": [
+    {
+      "id": "scenario_1",
+      "disclaimer": "⚠ MODE DÉMO — Tesseract.js n'a pas pu s'initialiser. Ces données sont entièrement fictives. La confirmation du texte extrait ne vaut pas validation d'une ordonnance.",
+      "fields": [
+        { "id": "product_1", "label": "Produit 1", "value": "DEMOMED A 500 mg", "uncertain": false, "isDemo": true },
+        { "id": "product_2", "label": "Produit 2", "value": "TESTOMED C", "uncertain": true, "isDemo": true },
+        { "id": "instructions", "label": "Instructions", "value": "1 cp le soir", "uncertain": true, "isDemo": true }
+      ]
+    }
+  ]
+}

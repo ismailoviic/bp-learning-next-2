@@ -1,0 +1,67 @@
+[
+  {
+    "id": "q_who",
+    "text": "C'est pour vous ou pour quelqu'un d'autre ?",
+    "whyUseful": "Connaître la personne concernée aide à adapter la conversation et à repérer si des informations supplémentaires sont nécessaires (ex. : enfant, personne âgée).",
+    "allowUnknown": true,
+    "showWhen": "always",
+    "quickAnswers": [
+      "Pour moi",
+      "Pour mon enfant",
+      "Pour un proche adulte",
+      "Pour une personne âgée",
+      "Pour une femme enceinte"
+    ]
+  },
+  {
+    "id": "q_duration",
+    "text": "Depuis combien de temps vous ressentez ça ?",
+    "whyUseful": "Une gêne récente et une gêne chronique n'appellent pas la même réponse. Cette information aide à choisir entre une option simple et une orientation vers le pharmacien.",
+    "allowUnknown": true,
+    "showWhen": "always",
+    "quickAnswers": [
+      "Quelques heures",
+      "1 à 2 jours",
+      "3 à 7 jours",
+      "Plus d'une semaine",
+      "Depuis longtemps (chronique)"
+    ]
+  },
+  {
+    "id": "q_tried",
+    "text": "Avez-vous déjà essayé quelque chose pour ça ?",
+    "whyUseful": "Savoir ce qui a déjà été essayé évite de proposer la même chose et peut indiquer si la situation est plus persistante.",
+    "allowUnknown": true,
+    "showWhen": "has_answered:q_who",
+    "quickAnswers": [
+      "Non, rien encore",
+      "Oui, sans résultat",
+      "Oui, ça a un peu aidé",
+      "Oui, mais les symptômes reviennent"
+    ]
+  },
+  {
+    "id": "q_other_products",
+    "text": "Prenez-vous d'autres produits ou médicaments en ce moment ?",
+    "whyUseful": "Cette information est indispensable si vous envisagez de suggérer un complément alimentaire ou un produit OTC. Si oui, le pharmacien doit être impliqué.",
+    "allowUnknown": true,
+    "showWhen": "has_answered:q_tried",
+    "quickAnswers": [
+      "Non",
+      "Oui, des médicaments prescrits",
+      "Oui, des compléments alimentaires",
+      "Oui, plusieurs (médicaments + compléments)"
+    ]
+  },
+  {
+    "id": "q_demo_pouch",
+    "text": "Avez-vous déjà une pochette adaptée pour ranger vos boîtes en voyage ?",
+    "whyUseful": "Permet de vérifier si le patient est déjà équipé pour transporter ses traitements en sécurité.",
+    "allowUnknown": true,
+    "showWhen": "always",
+    "quickAnswers": [
+      "Non",
+      "Oui, déjà équipé"
+    ]
+  }
+]

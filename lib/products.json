@@ -1,0 +1,2705 @@
+[
+  {
+    "id": "amox500",
+    "name": "Amoxicilline",
+    "category": "Antibiotique",
+    "aliases": [
+      "amoxicilline"
+    ],
+    "strength": [
+      "250 mg",
+      "500 mg",
+      "1 g"
+    ],
+    "form": [
+      "Gélule",
+      "Comprimé",
+      "Poudre suspension"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "amox1000",
+    "name": "Amoxicilline + Acide clavulanique",
+    "category": "Antibiotique",
+    "aliases": [
+      "amoxicilline/clavulanate"
+    ],
+    "strength": [
+      "500/125 mg",
+      "875/125 mg",
+      "1 g/125 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Poudre suspension"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "para500",
+    "name": "Paracétamol",
+    "category": "Antalgique",
+    "aliases": [
+      "paracétamol"
+    ],
+    "strength": [
+      "500 mg",
+      "1 g"
+    ],
+    "form": [
+      "Comprimé",
+      "Gélule",
+      "Sirop",
+      "Suppositoire"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "ibu400",
+    "name": "Ibuprofène",
+    "category": "AINS",
+    "aliases": [
+      "ibuprofène"
+    ],
+    "strength": [
+      "200 mg",
+      "400 mg",
+      "600 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Gélule",
+      "Suspension buvable"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "aspirin500",
+    "name": "Aspirine",
+    "category": "Antalgique / AINS",
+    "aliases": [
+      "acide acétylsalicylique"
+    ],
+    "strength": [
+      "100 mg",
+      "500 mg",
+      "1 g"
+    ],
+    "form": [
+      "Comprimé",
+      "Comprimé effervescent"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "omep20",
+    "name": "Oméprazole",
+    "category": "IPP",
+    "aliases": [
+      "oméprazole"
+    ],
+    "strength": [
+      "10 mg",
+      "20 mg",
+      "40 mg"
+    ],
+    "form": [
+      "Gélule",
+      "Comprimé gastrorésistant"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "panto40",
+    "name": "Pantoprazole",
+    "category": "IPP",
+    "aliases": [
+      "pantoprazole"
+    ],
+    "strength": [
+      "20 mg",
+      "40 mg"
+    ],
+    "form": [
+      "Comprimé gastrorésistant"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "metfo500",
+    "name": "Metformine",
+    "category": "Antidiabétique",
+    "aliases": [
+      "metformine"
+    ],
+    "strength": [
+      "500 mg",
+      "850 mg",
+      "1 g"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "atorva10",
+    "name": "Atorvastatine",
+    "category": "Statine",
+    "aliases": [
+      "atorvastatine"
+    ],
+    "strength": [
+      "10 mg",
+      "20 mg",
+      "40 mg",
+      "80 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "rosuva10",
+    "name": "Rosuvastatine",
+    "category": "Statine",
+    "aliases": [
+      "rosuvastatine"
+    ],
+    "strength": [
+      "5 mg",
+      "10 mg",
+      "20 mg",
+      "40 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "lisin5",
+    "name": "Lisinopril",
+    "category": "IEC",
+    "aliases": [
+      "lisinopril"
+    ],
+    "strength": [
+      "2,5 mg",
+      "5 mg",
+      "10 mg",
+      "20 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "ramip5",
+    "name": "Ramipril",
+    "category": "IEC",
+    "aliases": [
+      "ramipril"
+    ],
+    "strength": [
+      "1,25 mg",
+      "2,5 mg",
+      "5 mg",
+      "10 mg"
+    ],
+    "form": [
+      "Gélule",
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "amlod5",
+    "name": "Amlodipine",
+    "category": "Inhibiteur calcique",
+    "aliases": [
+      "amlodipine"
+    ],
+    "strength": [
+      "5 mg",
+      "10 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "losart50",
+    "name": "Losartan",
+    "category": "ARA II",
+    "aliases": [
+      "losartan"
+    ],
+    "strength": [
+      "25 mg",
+      "50 mg",
+      "100 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "valsar80",
+    "name": "Valsartan",
+    "category": "ARA II",
+    "aliases": [
+      "valsartan"
+    ],
+    "strength": [
+      "40 mg",
+      "80 mg",
+      "160 mg",
+      "320 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "bisopro5",
+    "name": "Bisoprolol",
+    "category": "Bêtabloquant",
+    "aliases": [
+      "bisoprolol"
+    ],
+    "strength": [
+      "1,25 mg",
+      "2,5 mg",
+      "5 mg",
+      "10 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "metopro50",
+    "name": "Métoprolol",
+    "category": "Bêtabloquant",
+    "aliases": [
+      "métoprolol"
+    ],
+    "strength": [
+      "25 mg",
+      "50 mg",
+      "100 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "levot50",
+    "name": "Lévothyroxine",
+    "category": "Hormones thyroïdiennes",
+    "aliases": [
+      "lévothyroxine"
+    ],
+    "strength": [
+      "25 µg",
+      "50 µg",
+      "75 µg",
+      "100 µg",
+      "125 µg",
+      "150 µg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "gliclaz30",
+    "name": "Gliclazide",
+    "category": "Antidiabétique",
+    "aliases": [
+      "gliclazide"
+    ],
+    "strength": [
+      "30 mg",
+      "60 mg",
+      "80 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Comprimé LP"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "spiro25",
+    "name": "Spironolactone",
+    "category": "Diurétique",
+    "aliases": [
+      "spironolactone"
+    ],
+    "strength": [
+      "25 mg",
+      "50 mg",
+      "75 mg",
+      "100 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "furose40",
+    "name": "Furosémide",
+    "category": "Diurétique",
+    "aliases": [
+      "furosémide"
+    ],
+    "strength": [
+      "20 mg",
+      "40 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Solution injectable"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "predni5",
+    "name": "Prednisolone",
+    "category": "Corticoïde",
+    "aliases": [
+      "prednisolone"
+    ],
+    "strength": [
+      "5 mg",
+      "20 mg",
+      "40 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Solution buvable"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "dexam4",
+    "name": "Dexaméthasone",
+    "category": "Corticoïde",
+    "aliases": [
+      "dexaméthasone"
+    ],
+    "strength": [
+      "0,5 mg",
+      "2 mg",
+      "4 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Solution injectable"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "cetiriz10",
+    "name": "Cétirizine",
+    "category": "Antihistaminique",
+    "aliases": [
+      "cétirizine"
+    ],
+    "strength": [
+      "5 mg",
+      "10 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Solution buvable"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "lorate10",
+    "name": "Loratadine",
+    "category": "Antihistaminique",
+    "aliases": [
+      "loratadine"
+    ],
+    "strength": [
+      "10 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Sirop"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "deslo5",
+    "name": "Desloratadine",
+    "category": "Antihistaminique",
+    "aliases": [
+      "desloratadine"
+    ],
+    "strength": [
+      "2,5 mg",
+      "5 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Sirop"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "azithro250",
+    "name": "Azithromycine",
+    "category": "Antibiotique",
+    "aliases": [
+      "azithromycine"
+    ],
+    "strength": [
+      "250 mg",
+      "500 mg"
+    ],
+    "form": [
+      "Gélule",
+      "Comprimé",
+      "Poudre suspension"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "doxy100",
+    "name": "Doxycycline",
+    "category": "Antibiotique",
+    "aliases": [
+      "doxycycline"
+    ],
+    "strength": [
+      "50 mg",
+      "100 mg"
+    ],
+    "form": [
+      "Gélule",
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "cipro500",
+    "name": "Ciprofloxacine",
+    "category": "Antibiotique",
+    "aliases": [
+      "ciprofloxacine"
+    ],
+    "strength": [
+      "250 mg",
+      "500 mg",
+      "750 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "metro400",
+    "name": "Métronidazole",
+    "category": "Antibiotique / antiprotozoaire",
+    "aliases": [
+      "métronidazole"
+    ],
+    "strength": [
+      "250 mg",
+      "400 mg",
+      "500 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Suppositoire",
+      "Ovule"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "flucon150",
+    "name": "Fluconazole",
+    "category": "Antifongique",
+    "aliases": [
+      "fluconazole"
+    ],
+    "strength": [
+      "50 mg",
+      "100 mg",
+      "150 mg",
+      "200 mg"
+    ],
+    "form": [
+      "Gélule",
+      "Solution buvable"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "aciclo200",
+    "name": "Aciclovir",
+    "category": "Antiviral",
+    "aliases": [
+      "aciclovir"
+    ],
+    "strength": [
+      "200 mg",
+      "400 mg",
+      "800 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Crème"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "tramad50",
+    "name": "Tramadol",
+    "category": "Antalgique opioïde faible",
+    "aliases": [
+      "tramadol"
+    ],
+    "strength": [
+      "50 mg",
+      "100 mg",
+      "150 mg",
+      "200 mg"
+    ],
+    "form": [
+      "Gélule",
+      "Comprimé LP",
+      "Gouttes"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "codein30",
+    "name": "Codéine + Paracétamol",
+    "category": "Antalgique",
+    "aliases": [
+      "codéine/paracétamol"
+    ],
+    "strength": [
+      "30 mg/500 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "diclof50",
+    "name": "Diclofénac",
+    "category": "AINS",
+    "aliases": [
+      "diclofénac"
+    ],
+    "strength": [
+      "25 mg",
+      "50 mg",
+      "75 mg",
+      "100 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Suppositoire",
+      "Gel"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "naprox500",
+    "name": "Naproxène",
+    "category": "AINS",
+    "aliases": [
+      "naproxène"
+    ],
+    "strength": [
+      "250 mg",
+      "500 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "ketopro100",
+    "name": "Kétoprofène",
+    "category": "AINS",
+    "aliases": [
+      "kétoprofène"
+    ],
+    "strength": [
+      "50 mg",
+      "100 mg",
+      "200 mg"
+    ],
+    "form": [
+      "Gélule",
+      "Comprimé LP",
+      "Gel"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "ranitid150",
+    "name": "Ranitidine",
+    "category": "Anti-H2",
+    "aliases": [
+      "ranitidine"
+    ],
+    "strength": [
+      "75 mg",
+      "150 mg",
+      "300 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "famo20",
+    "name": "Famotidine",
+    "category": "Anti-H2",
+    "aliases": [
+      "famotidine"
+    ],
+    "strength": [
+      "10 mg",
+      "20 mg",
+      "40 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "domper10",
+    "name": "Dompéridone",
+    "category": "Prokinétique / antiémétique",
+    "aliases": [
+      "dompéridone"
+    ],
+    "strength": [
+      "10 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Sirop",
+      "Suppositoire"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "meto10mg",
+    "name": "Métoclopramide",
+    "category": "Antiémétique",
+    "aliases": [
+      "métoclopramide"
+    ],
+    "strength": [
+      "10 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Solution injectable"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "sertra50",
+    "name": "Sertraline",
+    "category": "Antidépresseur ISRS",
+    "aliases": [
+      "sertraline"
+    ],
+    "strength": [
+      "50 mg",
+      "100 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "fluox20",
+    "name": "Fluoxétine",
+    "category": "Antidépresseur ISRS",
+    "aliases": [
+      "fluoxétine"
+    ],
+    "strength": [
+      "20 mg"
+    ],
+    "form": [
+      "Gélule"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "escital10",
+    "name": "Escitalopram",
+    "category": "Antidépresseur ISRS",
+    "aliases": [
+      "escitalopram"
+    ],
+    "strength": [
+      "5 mg",
+      "10 mg",
+      "20 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "alpraz05",
+    "name": "Alprazolam",
+    "category": "Benzodiazépine",
+    "aliases": [
+      "alprazolam"
+    ],
+    "strength": [
+      "0,25 mg",
+      "0,5 mg",
+      "1 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "diaze5",
+    "name": "Diazépam",
+    "category": "Benzodiazépine",
+    "aliases": [
+      "diazépam"
+    ],
+    "strength": [
+      "2 mg",
+      "5 mg",
+      "10 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Gouttes"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "zolpi10",
+    "name": "Zolpidem",
+    "category": "Hypnotique",
+    "aliases": [
+      "zolpidem"
+    ],
+    "strength": [
+      "5 mg",
+      "10 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "glimep2",
+    "name": "Glimépiride",
+    "category": "Antidiabétique",
+    "aliases": [
+      "glimépiride"
+    ],
+    "strength": [
+      "1 mg",
+      "2 mg",
+      "3 mg",
+      "4 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "sitagl100",
+    "name": "Sitagliptine",
+    "category": "Antidiabétique",
+    "aliases": [
+      "sitagliptine"
+    ],
+    "strength": [
+      "50 mg",
+      "100 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "empaglifl",
+    "name": "Empagliflozine",
+    "category": "Antidiabétique",
+    "aliases": [
+      "empagliflozine"
+    ],
+    "strength": [
+      "10 mg",
+      "25 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "allopurin",
+    "name": "Allopurinol",
+    "category": "Uricosurique",
+    "aliases": [
+      "allopurinol"
+    ],
+    "strength": [
+      "100 mg",
+      "200 mg",
+      "300 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "colchi1",
+    "name": "Colchicine",
+    "category": "Anti-goutteux",
+    "aliases": [
+      "colchicine"
+    ],
+    "strength": [
+      "1 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "warfar5",
+    "name": "Warfarine",
+    "category": "Anticoagulant",
+    "aliases": [
+      "warfarine"
+    ],
+    "strength": [
+      "2 mg",
+      "5 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "rivaroxa20",
+    "name": "Rivaroxaban",
+    "category": "Anticoagulant",
+    "aliases": [
+      "rivaroxaban"
+    ],
+    "strength": [
+      "10 mg",
+      "15 mg",
+      "20 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "clopido75",
+    "name": "Clopidogrel",
+    "category": "Antiagrégant plaquettaire",
+    "aliases": [
+      "clopidogrel"
+    ],
+    "strength": [
+      "75 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "alendronate",
+    "name": "Alendronate",
+    "category": "Bisphosphonate",
+    "aliases": [
+      "alendronate"
+    ],
+    "strength": [
+      "10 mg",
+      "70 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "calcitriol",
+    "name": "Calcitriol",
+    "category": "Vitamine D active",
+    "aliases": [
+      "calcitriol"
+    ],
+    "strength": [
+      "0,25 µg",
+      "0,5 µg"
+    ],
+    "form": [
+      "Gélule"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "vitd3",
+    "name": "Vitamine D3 (cholécalciférol)",
+    "category": "Vitamine D",
+    "aliases": [
+      "cholécalciférol"
+    ],
+    "strength": [
+      "400 UI",
+      "800 UI",
+      "1000 UI",
+      "2000 UI",
+      "100 000 UI"
+    ],
+    "form": [
+      "Comprimé",
+      "Ampoule",
+      "Gouttes"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "vitb12",
+    "name": "Vitamine B12 (cyanocobalamine)",
+    "category": "Vitamine B",
+    "aliases": [
+      "cyanocobalamine"
+    ],
+    "strength": [
+      "250 µg",
+      "500 µg",
+      "1000 µg"
+    ],
+    "form": [
+      "Comprimé",
+      "Ampoule injectable"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "vitc1000",
+    "name": "Vitamine C (acide ascorbique)",
+    "category": "Vitamine C",
+    "aliases": [
+      "acide ascorbique"
+    ],
+    "strength": [
+      "250 mg",
+      "500 mg",
+      "1000 mg"
+    ],
+    "form": [
+      "Comprimé effervescent",
+      "Gélule",
+      "Poudre"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "folicac",
+    "name": "Acide folique (Vitamine B9)",
+    "category": "Vitamine B",
+    "aliases": [
+      "acide folique"
+    ],
+    "strength": [
+      "0,4 mg",
+      "5 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "ferrous",
+    "name": "Sulfate ferreux",
+    "category": "Fer",
+    "aliases": [
+      "sulfate ferreux"
+    ],
+    "strength": [
+      "80 mg",
+      "100 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Sirop"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "magnesium",
+    "name": "Magnésium marin",
+    "category": "Complément minéral",
+    "aliases": [
+      "magnésium"
+    ],
+    "strength": [
+      "100 mg",
+      "300 mg",
+      "400 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Gélule"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "zinc10",
+    "name": "Zinc",
+    "category": "Oligo-élément",
+    "aliases": [
+      "zinc"
+    ],
+    "strength": [
+      "10 mg",
+      "15 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Gélule"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "omega3",
+    "name": "Oméga-3 (huile de poisson)",
+    "category": "Complément alimentaire",
+    "aliases": [
+      "acides gras oméga-3"
+    ],
+    "strength": [
+      "500 mg",
+      "1000 mg"
+    ],
+    "form": [
+      "Capsule"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "lactulose",
+    "name": "Lactulose",
+    "category": "Laxatif osmotique",
+    "aliases": [
+      "lactulose"
+    ],
+    "strength": [
+      "3,35 g/5 mL",
+      "10 g/15 mL"
+    ],
+    "form": [
+      "Solution buvable"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "macrogol",
+    "name": "Macrogol (PEG)",
+    "category": "Laxatif osmotique",
+    "aliases": [
+      "macrogol"
+    ],
+    "strength": [
+      "3,7 g",
+      "10 g"
+    ],
+    "form": [
+      "Poudre pour solution"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "loperamid",
+    "name": "Lopéramide",
+    "category": "Antidiarrhéique",
+    "aliases": [
+      "lopéramide"
+    ],
+    "strength": [
+      "2 mg"
+    ],
+    "form": [
+      "Gélule",
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "smecta3",
+    "name": "Diosmectite",
+    "category": "Antidiarrhéique / adsorbant",
+    "aliases": [
+      "diosmectite"
+    ],
+    "strength": [
+      "3 g"
+    ],
+    "form": [
+      "Poudre pour suspension"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "gaviscon",
+    "name": "Alginate de sodium + bicarbonate",
+    "category": "Antireflux / antiacide",
+    "aliases": [
+      "alginate/bicarbonate"
+    ],
+    "strength": [
+      "—"
+    ],
+    "form": [
+      "Comprimé à croquer",
+      "Suspension buvable"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "maalox",
+    "name": "Hydroxyde d'aluminium + magnésium",
+    "category": "Antiacide",
+    "aliases": [
+      "aluminium/magnésium"
+    ],
+    "strength": [
+      "—"
+    ],
+    "form": [
+      "Comprimé à croquer",
+      "Gel oral"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "spasfon",
+    "name": "Phloroglucinol",
+    "category": "Antispasmodique",
+    "aliases": [
+      "phloroglucinol"
+    ],
+    "strength": [
+      "80 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Suppositoire",
+      "Solution injectable"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "buscopan",
+    "name": "Butylscopolamine",
+    "category": "Antispasmodique",
+    "aliases": [
+      "butylscopolamine"
+    ],
+    "strength": [
+      "10 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Suppositoire",
+      "Solution injectable"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "ambroxol",
+    "name": "Ambroxol",
+    "category": "Mucolytique",
+    "aliases": [
+      "ambroxol"
+    ],
+    "strength": [
+      "15 mg",
+      "30 mg",
+      "75 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Sirop",
+      "Gélule LP"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "n_acetyl",
+    "name": "N-Acétylcystéine (NAC)",
+    "category": "Mucolytique / antioxydant",
+    "aliases": [
+      "acétylcystéine"
+    ],
+    "strength": [
+      "200 mg",
+      "600 mg"
+    ],
+    "form": [
+      "Comprimé effervescent",
+      "Granulés"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "pseudoeph",
+    "name": "Pseudoéphédrine",
+    "category": "Décongestionnant nasal oral",
+    "aliases": [
+      "pseudoéphédrine"
+    ],
+    "strength": [
+      "60 mg",
+      "120 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "xylometa",
+    "name": "Xylométazoline",
+    "category": "Décongestionnant nasal local",
+    "aliases": [
+      "xylométazoline"
+    ],
+    "strength": [
+      "0,05 %",
+      "0,1 %"
+    ],
+    "form": [
+      "Spray nasal",
+      "Gouttes nasales"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "serum_phy",
+    "name": "Sérum physiologique (NaCl 0,9 %)",
+    "category": "Solution de lavage",
+    "aliases": [
+      "chlorure de sodium"
+    ],
+    "strength": [
+      "0,9 %"
+    ],
+    "form": [
+      "Spray nasal",
+      "Unidoses",
+      "Flacon"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "biafine",
+    "name": "Émulsion pour application cutanée",
+    "category": "Soin cutané",
+    "aliases": [
+      "tréthanolamine"
+    ],
+    "strength": [
+      "—"
+    ],
+    "form": [
+      "Crème / émulsion"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "betadine",
+    "name": "Povidone iodée",
+    "category": "Antiseptique",
+    "aliases": [
+      "povidone iodée"
+    ],
+    "strength": [
+      "10 %"
+    ],
+    "form": [
+      "Solution dermique",
+      "Compresses",
+      "Gel"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "alcool70",
+    "name": "Alcool éthylique 70°",
+    "category": "Antiseptique",
+    "aliases": [
+      "éthanol"
+    ],
+    "strength": [
+      "70°"
+    ],
+    "form": [
+      "Solution"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "eau_oxy",
+    "name": "Eau oxygénée (H2O2)",
+    "category": "Antiseptique",
+    "aliases": [
+      "peroxyde d'hydrogène"
+    ],
+    "strength": [
+      "3 %",
+      "10 %"
+    ],
+    "form": [
+      "Solution"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "centella",
+    "name": "Centella asiatica (Madécassol)",
+    "category": "Cicatrisant",
+    "aliases": [
+      "centella asiatica"
+    ],
+    "strength": [
+      "—"
+    ],
+    "form": [
+      "Crème",
+      "Poudre"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "vaseline",
+    "name": "Vaseline (paraffine)",
+    "category": "Émollient",
+    "aliases": [
+      "paraffine"
+    ],
+    "strength": [
+      "—"
+    ],
+    "form": [
+      "Pommade"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "zinc_pom",
+    "name": "Pommade à l'oxyde de zinc",
+    "category": "Soin cutané / érythème fessier",
+    "aliases": [
+      "oxyde de zinc"
+    ],
+    "strength": [
+      "10 %",
+      "15 %"
+    ],
+    "form": [
+      "Pommade"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "hydrocort1",
+    "name": "Hydrocortisone (dermatologie)",
+    "category": "Corticoïde topique (faible)",
+    "aliases": [
+      "hydrocortisone"
+    ],
+    "strength": [
+      "0,5 %",
+      "1 %",
+      "2,5 %"
+    ],
+    "form": [
+      "Crème",
+      "Pommade"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "beclometh",
+    "name": "Béclométasone (inhalation)",
+    "category": "Corticoïde inhalé",
+    "aliases": [
+      "béclométasone"
+    ],
+    "strength": [
+      "50 µg",
+      "100 µg",
+      "200 µg",
+      "250 µg"
+    ],
+    "form": [
+      "Aérosol-doseur"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "salbutamol",
+    "name": "Salbutamol",
+    "category": "Bronchodilatateur β2",
+    "aliases": [
+      "salbutamol"
+    ],
+    "strength": [
+      "100 µg/dose"
+    ],
+    "form": [
+      "Aérosol-doseur",
+      "Solution pour nébulisation"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "formoterol",
+    "name": "Formotérol",
+    "category": "Bronchodilatateur β2 longue durée",
+    "aliases": [
+      "formotérol"
+    ],
+    "strength": [
+      "12 µg"
+    ],
+    "form": [
+      "Poudre pour inhalation"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "tiotropi",
+    "name": "Tiotropium",
+    "category": "Anticholinergique inhalé",
+    "aliases": [
+      "tiotropium"
+    ],
+    "strength": [
+      "18 µg"
+    ],
+    "form": [
+      "Poudre pour inhalation"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "fenofi200",
+    "name": "Fénofibrate",
+    "category": "Fibrate",
+    "aliases": [
+      "fénofibrate"
+    ],
+    "strength": [
+      "100 mg",
+      "145 mg",
+      "200 mg"
+    ],
+    "form": [
+      "Gélule",
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "ezetimib10",
+    "name": "Ézétimibe",
+    "category": "Hypolipémiant",
+    "aliases": [
+      "ézétimibe"
+    ],
+    "strength": [
+      "10 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "probiotique",
+    "name": "Probiotiques (Lactobacillus)",
+    "category": "Complément alimentaire",
+    "aliases": [
+      "—"
+    ],
+    "strength": [
+      "2,5 milliards UFC",
+      "5 milliards UFC",
+      "10 milliards UFC"
+    ],
+    "form": [
+      "Gélule",
+      "Sachet"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "prebiotique",
+    "name": "Prébiotiques / Inuline FOS",
+    "category": "Complément alimentaire",
+    "aliases": [
+      "—"
+    ],
+    "strength": [
+      "—"
+    ],
+    "form": [
+      "Poudre",
+      "Gélule"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "charbon_act",
+    "name": "Charbon activé",
+    "category": "Adsorbant intestinal",
+    "aliases": [
+      "charbon activé"
+    ],
+    "strength": [
+      "—"
+    ],
+    "form": [
+      "Gélule",
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "hyoscine",
+    "name": "Hyoscine butylbromide",
+    "category": "Antispasmodique",
+    "aliases": [
+      "hyoscine butylbromide"
+    ],
+    "strength": [
+      "10 mg"
+    ],
+    "form": [
+      "Comprimé",
+      "Suppositoire"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "nystatin",
+    "name": "Nystatine",
+    "category": "Antifongique",
+    "aliases": [
+      "nystatine"
+    ],
+    "strength": [
+      "100 000 UI",
+      "500 000 UI"
+    ],
+    "form": [
+      "Comprimé",
+      "Suspension buvable",
+      "Ovule"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "miconazol",
+    "name": "Miconazole",
+    "category": "Antifongique topique",
+    "aliases": [
+      "miconazole"
+    ],
+    "strength": [
+      "2 %"
+    ],
+    "form": [
+      "Crème",
+      "Gel oral",
+      "Poudre"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "terbinafin",
+    "name": "Terbinafine",
+    "category": "Antifongique",
+    "aliases": [
+      "terbinafine"
+    ],
+    "strength": [
+      "250 mg",
+      "1 %"
+    ],
+    "form": [
+      "Comprimé",
+      "Crème",
+      "Gel"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "benzocaine",
+    "name": "Benzocaïne (gorge)",
+    "category": "Anesthésique local / gorge",
+    "aliases": [
+      "benzocaïne"
+    ],
+    "strength": [
+      "—"
+    ],
+    "form": [
+      "Pastilles",
+      "Spray"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "hexetidin",
+    "name": "Hexétidine (bain de bouche)",
+    "category": "Antiseptique buccal",
+    "aliases": [
+      "hexétidine"
+    ],
+    "strength": [
+      "0,1 %"
+    ],
+    "form": [
+      "Solution buccale"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "dexamethasone_eye",
+    "name": "Dexaméthasone (ophtalmique)",
+    "category": "Corticoïde ophtalmique",
+    "aliases": [
+      "dexaméthasone"
+    ],
+    "strength": [
+      "0,1 %"
+    ],
+    "form": [
+      "Collyre"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "tobramycin_eye",
+    "name": "Tobramycine (ophtalmique)",
+    "category": "Antibiotique ophtalmique",
+    "aliases": [
+      "tobramycine"
+    ],
+    "strength": [
+      "0,3 %"
+    ],
+    "form": [
+      "Collyre"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "hyaluronate_eye",
+    "name": "Acide hyaluronique (larmes artificielles)",
+    "category": "Larmes artificielles",
+    "aliases": [
+      "hyaluronate de sodium"
+    ],
+    "strength": [
+      "0,1 %",
+      "0,2 %",
+      "0,3 %"
+    ],
+    "form": [
+      "Collyre en unidoses"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "carbomer_eye",
+    "name": "Carbomère (gel ophtalmique)",
+    "category": "Larmes artificielles",
+    "aliases": [
+      "carbomère"
+    ],
+    "strength": [
+      "0,2 %",
+      "0,3 %"
+    ],
+    "form": [
+      "Gel ophtalmique"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "erythropoi",
+    "name": "Érythropoïétine (EPO)",
+    "category": "Facteur stimulant l'érythropoïèse",
+    "aliases": [
+      "époétine"
+    ],
+    "strength": [
+      "2000 UI",
+      "4000 UI",
+      "10000 UI"
+    ],
+    "form": [
+      "Solution injectable"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "insuline_rap",
+    "name": "Insuline rapide (Lispro / Aspart)",
+    "category": "Insuline",
+    "aliases": [
+      "insuline asparte / lispro"
+    ],
+    "strength": [
+      "100 UI/mL"
+    ],
+    "form": [
+      "Stylo injecteur",
+      "Cartouche"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "insuline_lente",
+    "name": "Insuline basale (Glargine / Détémir)",
+    "category": "Insuline",
+    "aliases": [
+      "insuline glargine / détémir"
+    ],
+    "strength": [
+      "100 UI/mL"
+    ],
+    "form": [
+      "Stylo injecteur"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "testosteron",
+    "name": "Testostérone (gel)",
+    "category": "Androgène",
+    "aliases": [
+      "testostérone"
+    ],
+    "strength": [
+      "16,2 mg/g",
+      "50 mg/5 g"
+    ],
+    "form": [
+      "Gel pour application cutanée"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "progesteron",
+    "name": "Progestérone micronisée",
+    "category": "Progestogène",
+    "aliases": [
+      "progestérone"
+    ],
+    "strength": [
+      "100 mg",
+      "200 mg"
+    ],
+    "form": [
+      "Capsule molle"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "pilule_estr",
+    "name": "Pilule contraceptive (estroprogestative)",
+    "category": "Contraceptif oral",
+    "aliases": [
+      "éthinylestradiol/lévonorgestrel"
+    ],
+    "strength": [
+      "20 µg/100 µg",
+      "30 µg/150 µg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "levonorg",
+    "name": "Lévonorgestrel (contraception d'urgence)",
+    "category": "Contraceptif d'urgence",
+    "aliases": [
+      "lévonorgestrel"
+    ],
+    "strength": [
+      "1,5 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "creme_hydrat",
+    "name": "Crème hydratante corps",
+    "category": "Parapharmacie — Soin",
+    "aliases": [
+      "—"
+    ],
+    "strength": [
+      "—"
+    ],
+    "form": [
+      "Crème",
+      "Lotion",
+      "Baume"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "ecran_sol50",
+    "name": "Écran solaire SPF 50+",
+    "category": "Parapharmacie — Protection solaire",
+    "aliases": [
+      "—"
+    ],
+    "strength": [
+      "SPF 50+"
+    ],
+    "form": [
+      "Crème",
+      "Spray",
+      "Lait"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "baume_lev",
+    "name": "Baume lèvres protecteur",
+    "category": "Parapharmacie — Soin",
+    "aliases": [
+      "—"
+    ],
+    "strength": [
+      "—"
+    ],
+    "form": [
+      "Stick"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "gel_hydro",
+    "name": "Gel hydroalcoolique",
+    "category": "Parapharmacie — Hygiène",
+    "aliases": [
+      "éthanol"
+    ],
+    "strength": [
+      "60 %",
+      "70 %"
+    ],
+    "form": [
+      "Gel",
+      "Spray"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "termometre",
+    "name": "Thermomètre électronique",
+    "category": "Parapharmacie — Matériel",
+    "aliases": [
+      "—"
+    ],
+    "strength": [
+      "—"
+    ],
+    "form": [
+      "Axillaire",
+      "Auriculaire",
+      "Frontal"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "tensiometre",
+    "name": "Tensiomètre électronique",
+    "category": "Parapharmacie — Matériel",
+    "aliases": [
+      "—"
+    ],
+    "strength": [
+      "—"
+    ],
+    "form": [
+      "Bras",
+      "Poignet"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "glycemetre",
+    "name": "Glucomètre (lecteur glycémie)",
+    "category": "Parapharmacie — Matériel",
+    "aliases": [
+      "—"
+    ],
+    "strength": [
+      "—"
+    ],
+    "form": [
+      "Lecteur + bandelettes"
+    ],
+    "needTags": [],
+    "isMedication": false,
+    "fictional": false,
+    "reviewStatus": "Unverified"
+  },
+  {
+    "id": "baume_levres_froid",
+    "name": "Baume lèvres protecteur froid",
+    "category": "Soin du visage",
+    "aliases": [],
+    "strength": [],
+    "form": [],
+    "needTags": [
+      "lèvres sèches",
+      "froid",
+      "dessèchement"
+    ],
+    "isMedication": false,
+    "fictional": true,
+    "reviewStatus": "DÉMO — Contenu fictif non revu par un professionnel de santé",
+    "suggestedWording": "On a un baume lèvres sans parfum, adapté au froid — simple et pratique.",
+    "notFor": [
+      "plaie ouverte",
+      "infection"
+    ]
+  },
+  {
+    "id": "creme_mains_hiver",
+    "name": "Crème mains hiver nourrissante",
+    "category": "Soin du corps",
+    "aliases": [],
+    "strength": [],
+    "form": [],
+    "needTags": [
+      "mains sèches",
+      "froid",
+      "dessèchement",
+      "peau tiraillée"
+    ],
+    "isMedication": false,
+    "fictional": true,
+    "reviewStatus": "DÉMO — Contenu fictif non revu par un professionnel de santé",
+    "suggestedWording": "Pour les mains sèches par le froid, on a une crème mains nourrissante — elle s'absorbe vite.",
+    "notFor": [
+      "plaie ouverte",
+      "eczéma suintant"
+    ]
+  },
+  {
+    "id": "spray_eau_mer",
+    "name": "Spray nasal eau de mer isotonique",
+    "category": "ORL — Nez",
+    "aliases": [],
+    "strength": [],
+    "form": [],
+    "needTags": [
+      "nez bouché",
+      "nez sec",
+      "congestion légère",
+      "rhinite légère"
+    ],
+    "isMedication": false,
+    "fictional": true,
+    "reviewStatus": "DÉMO — Contenu fictif non revu par un professionnel de santé",
+    "suggestedWording": "Pour un nez bouché léger, on a un spray eau de mer — sans médicament, doux pour un usage quotidien.",
+    "notFor": [
+      "prescription médicale requise",
+      "polypes nasaux connus"
+    ]
+  },
+  {
+    "id": "pastilles_gorge_menthol",
+    "name": "Pastilles gorge menthol apaisantes",
+    "category": "ORL — Gorge",
+    "aliases": [],
+    "strength": [],
+    "form": [],
+    "needTags": [
+      "irritation de gorge légère",
+      "gorge sèche",
+      "voix enrouée légère"
+    ],
+    "isMedication": false,
+    "fictional": true,
+    "reviewStatus": "DÉMO — Contenu fictif non revu par un professionnel de santé",
+    "suggestedWording": "Pour une irritation légère, des pastilles gorge au menthol peuvent aider à apaiser.",
+    "notFor": [
+      "enfants de moins de 6 ans",
+      "angine bactérienne diagnostiquée"
+    ]
+  },
+  {
+    "id": "magnesium_complement",
+    "name": "Complément magnésium marin",
+    "category": "Compléments alimentaires",
+    "aliases": [],
+    "strength": [],
+    "form": [],
+    "needTags": [
+      "fatigue passagère",
+      "manque d'énergie",
+      "coup de mou",
+      "stress léger"
+    ],
+    "isMedication": false,
+    "fictional": true,
+    "reviewStatus": "DÉMO — Contenu fictif non revu par un professionnel de santé",
+    "suggestedWording": "Un complément en magnésium peut correspondre à ce que vous décrivez — la durée recommandée est d'un mois.",
+    "notFor": [
+      "maladie chronique non diagnostiquée",
+      "traitement en cours sans avis pharmacien"
+    ]
+  },
+  {
+    "id": "gel_hydro_mains",
+    "name": "Gel hydroalcoolique mains 500 ml",
+    "category": "Hygiène",
+    "aliases": [],
+    "strength": [],
+    "form": [],
+    "needTags": [
+      "hygiène des mains",
+      "déplacement",
+      "usage professionnel"
+    ],
+    "isMedication": false,
+    "fictional": true,
+    "reviewStatus": "DÉMO — Contenu fictif non revu par un professionnel de santé",
+    "suggestedWording": "Pour l'hygiène en déplacement, on a un gel mains de 500 ml rechargeable.",
+    "notFor": [
+      "peau lésée"
+    ]
+  },
+  {
+    "id": "creme_solaire_50",
+    "name": "Crème solaire SPF 50+ visage",
+    "category": "Soin du visage",
+    "aliases": [],
+    "strength": [],
+    "form": [],
+    "needTags": [
+      "protection solaire",
+      "exposition soleil",
+      "peau sensible",
+      "teint à protéger"
+    ],
+    "isMedication": false,
+    "fictional": true,
+    "reviewStatus": "DÉMO — Contenu fictif non revu par un professionnel de santé",
+    "suggestedWording": "Pour une protection solaire quotidienne, on a une crème SPF 50+ légère, adaptée au visage.",
+    "notFor": [
+      "allergie connue aux filtres solaires"
+    ]
+  },
+  {
+    "id": "collyre_hydratant",
+    "name": "Collyre hydratant sans conservateur",
+    "category": "Soins oculaires",
+    "aliases": [],
+    "strength": [],
+    "form": [],
+    "needTags": [
+      "yeux secs",
+      "irritation légère des yeux",
+      "écrans prolongés",
+      "air climatisé"
+    ],
+    "isMedication": false,
+    "fictional": true,
+    "reviewStatus": "DÉMO — Contenu fictif non revu par un professionnel de santé",
+    "suggestedWording": "Pour des yeux secs ou fatigués par les écrans, on a des gouttes hydratantes sans conservateur.",
+    "notFor": [
+      "infection oculaire",
+      "traumatisme oculaire",
+      "rougeur persistante"
+    ]
+  },
+  {
+    "id": "probiotiques_flore",
+    "name": "Probiotiques Flore Intestinale",
+    "category": "Compléments alimentaires",
+    "aliases": [],
+    "strength": [],
+    "form": [],
+    "needTags": [
+      "antibiotique",
+      "amoxicilline",
+      "augmentin",
+      "azithromycine",
+      "clamoxyl",
+      "orelox",
+      "zithromax",
+      "flore intestinale",
+      "diarrhée"
+    ],
+    "isMedication": false,
+    "fictional": true,
+    "reviewStatus": "DÉMO — Contenu fictif",
+    "suggestedWording": "Le traitement antibiotique prescrit peut déséquilibrer votre flore intestinale et causer des inconforts. Je vous conseille de l'associer à ces probiotiques pour la protéger.",
+    "notFor": [
+      "immunodépression sévère"
+    ]
+  },
+  {
+    "id": "pansement_gastrique",
+    "name": "Pansement gastrique (Alginate/Antacide)",
+    "category": "Gastro-entérologie",
+    "aliases": [],
+    "strength": [],
+    "form": [],
+    "needTags": [
+      "ibuprofène",
+      "anti-inflammatoire",
+      "aspirine",
+      "diclofénac",
+      "naproxène",
+      "profénid",
+      "voltarene",
+      "aINS",
+      "brûlure d'estomac"
+    ],
+    "isMedication": false,
+    "fictional": true,
+    "reviewStatus": "DÉMO — Contenu fictif",
+    "suggestedWording": "Cet anti-inflammatoire peut parfois irriter l'estomac. Si vous êtes sensible, je peux vous proposer un pansement gastrique pour protéger votre estomac pendant le traitement.",
+    "notFor": [
+      "insuffisance rénale sévère",
+      "prise avec d'autres médicaments sans espacement de 2h"
+    ]
+  },
+  {
+    "id": "coenzyme_q10",
+    "name": "Coenzyme Q10 100mg",
+    "category": "Compléments alimentaires",
+    "aliases": [],
+    "strength": [],
+    "form": [],
+    "needTags": [
+      "statine",
+      "atorvastatine",
+      "rosuvastatine",
+      "simvastatine",
+      "tahor",
+      "crestor",
+      "zocor",
+      "douleurs musculaires"
+    ],
+    "isMedication": false,
+    "fictional": true,
+    "reviewStatus": "DÉMO — Contenu fictif",
+    "suggestedWording": "Ce traitement pour le cholestérol peut parfois diminuer votre taux de Coenzyme Q10, ce qui cause des sensibilités musculaires. Une supplémentation peut vous aider à maintenir un bon confort musculaire.",
+    "notFor": [
+      "traitement anticoagulant (interaction possible) sans avis médical"
+    ]
+  },
+  {
+    "id": "demomed_a",
+    "name": "DEMOMED A",
+    "category": "Test",
+    "aliases": [],
+    "strength": [
+      "500 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": true,
+    "reviewStatus": "Fixture"
+  },
+  {
+    "id": "demomed_b",
+    "name": "DEMOMED B",
+    "category": "Test",
+    "aliases": [],
+    "strength": [
+      "10 mg"
+    ],
+    "form": [
+      "Sirop"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": true,
+    "reviewStatus": "Fixture"
+  },
+  {
+    "id": "testomed_c",
+    "name": "TESTOMED C",
+    "category": "Test",
+    "aliases": [],
+    "strength": [
+      "250 mg"
+    ],
+    "form": [
+      "Gélule"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": true,
+    "reviewStatus": "Fixture"
+  },
+  {
+    "id": "testomed_d",
+    "name": "TESTOMED D",
+    "category": "Test",
+    "aliases": [],
+    "strength": [
+      "20 mg"
+    ],
+    "form": [
+      "Comprimé"
+    ],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": true,
+    "reviewStatus": "Fixture"
+  },
+  {
+    "id": "demomed_a",
+    "name": "DEMOMED A",
+    "category": "Médicament fictif",
+    "aliases": ["demomed", "demomed a"],
+    "strength": ["10 mg"],
+    "form": ["Comprimé"],
+    "needTags": [],
+    "isMedication": true,
+    "fictional": true,
+    "reviewStatus": "Demo"
+  },
+  {
+    "id": "demo_pochette",
+    "name": "Pochette de rangement — Démo",
+    "category": "Accessoire",
+    "aliases": ["pochette", "rangement"],
+    "strength": [],
+    "form": [],
+    "needTags": ["voyage", "transport", "rangement", "pochette"],
+    "isMedication": false,
+    "fictional": true,
+    "reviewStatus": "Demo"
+  }
+]
