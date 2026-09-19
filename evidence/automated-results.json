@@ -1,0 +1,17 @@
+{
+  "passed": [
+    "full nine-activity path",
+    "answer-specific feedback",
+    "retry preserves first attempt",
+    "refresh restores pending feedback",
+    "feedback focus",
+    "100% completion with 2/3 first-attempt simulation score",
+    "reset Escape and focus restoration",
+    "390px overview and exercise no overflow",
+    "storage-write error allows continued feedback",
+    "corrupt storage warning",
+    "reduced-motion disables WebGL",
+    "skip-link keyboard navigation"
+  ],
+  "pageErrors": []
+}
